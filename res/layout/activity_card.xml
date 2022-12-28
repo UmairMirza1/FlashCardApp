@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="2dp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card"
+        android:textSize="35sp"
+
+      >
+        ></TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:layout_margin="33dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Front"
+            android:textSize="35sp">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/text_front"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Add front here"
+        android:textSize="35sp"
+        android:inputType="text"
+
+        >
+
+    </EditText>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:layout_margin="33dp">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Back"
+            android:textSize="35sp"
+            android:inputType="text"
+            >
+
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/text_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="add back here"
+        android:textSize="35sp">
+
+    </EditText>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:text="Cancel"
+            android:onClick="buttonClick"
+            />
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:onClick="buttonClick"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
